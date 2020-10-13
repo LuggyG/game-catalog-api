@@ -25,6 +25,7 @@ export function makeApp(db: Db): core.Express {
     platformController.update(platformModel)
   );
 
+  
   app.get(
     "/platforms/:slug/games",
     async (request: Request, response: Response) => {
